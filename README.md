@@ -1,12 +1,10 @@
 # Docker Files for Testing
 
----
 
 ### About 
 
 Simple docker files that can create simple services for testing and/or development.
 
---- 
 
 ### Usage 
 
