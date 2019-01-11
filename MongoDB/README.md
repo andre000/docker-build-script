@@ -2,6 +2,10 @@
 
 ### Usage 
 
-Run the `mongo-build.sh` script first and then `mongo-run.sh`.
+Before starting the image, you must run the `mongo-build.sh` script.
 
-The `mongo-run.sh` tries to create a volume on `/data/mongodb` by default. If you don't want this behavior, use the `--no-volume` flag.
+Then you can run the `mongo-run.sh` script. It uses the port 27017.
+
+The `mongo-run.sh` tries to create a volume on `{current_path}/.data/mongo` by default.
+
+If you don't want this behavior, use the `--no-volume` flag.
