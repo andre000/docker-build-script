@@ -8,6 +8,6 @@ case "$1" in
 		docker run -d --name mysql --net test_network -p 3306:3306 a000/mysql-test
 		;;
 	*)
-		docker run -d --name mysql --net test_network -p 3306:3306 -v /data/mysql:/var/lib/mysql/ a000/mysql-test
+		docker run -d --name mysql --net test_network -p 3306:3306 -v `pwd`/.data/mysql:/var/lib/mysql/ a000/mysql-test
 		;;
 esac
